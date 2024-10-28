@@ -18,5 +18,4 @@
 		<typeHandler javaType="java.sql.Time" handler="org.apache.ibatis.type.DateTypeHandler"/>
 		<typeHandler javaType="java.sql.Date" handler="org.apache.ibatis.type.DateTypeHandler"/>
     </typeHandlers>
-
 </configuration>

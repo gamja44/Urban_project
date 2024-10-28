@@ -1,0 +1,20 @@
+networks:
+  default:
+    driver: bridge
+
+services:
+  mariadb:
+    image: mariadb:10.4
+    container_name: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: urban#root
+      MYSQL_DATABASE: urban
+      MYSQL_USER: urban
+      MYSQL_PASSWORD: urban#123
+    ports:
+      - "3306:3306"
+    networks:
+      - default
+    volumes:
+      - ./data:/var/lib/mysql

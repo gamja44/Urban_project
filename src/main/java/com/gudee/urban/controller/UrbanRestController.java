@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.ModelAndView;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -60,8 +59,4 @@ public class UrbanRestController {
         // TODO #2 "this" 키워드
         return this.objectMapper.writeValueAsString(resultMap);
     }
-    
-    //json형식으로 데이터를 주는 컨트롤러를 작성해서 지도API에 뿌리고 마커클러스터 생성하기
-    
-
 }

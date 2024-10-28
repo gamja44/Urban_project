@@ -33,10 +33,6 @@ repositories {
 }
 
 dependencies {
-	// thymeleaf-layout-dialect
-	implementation group: 'nz.net.ultraq.thymeleaf', name: 'thymeleaf-layout-dialect', version: '3.3.0'
-	
-
     // spring
     implementation "org.springframework.boot:spring-boot-starter-web"
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'

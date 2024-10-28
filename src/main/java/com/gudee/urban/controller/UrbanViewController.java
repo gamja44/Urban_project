@@ -14,7 +14,4 @@ public class UrbanViewController {
         modelAndView.addObject("message", "Hello, Urban!");
         return modelAndView;
     }
-    
-    
-
 }
