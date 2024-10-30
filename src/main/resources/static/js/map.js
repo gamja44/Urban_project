@@ -28,7 +28,7 @@ $(document).ready(function () {
                     // 마커 클릭 이벤트 등록
                     kakao.maps.event.addListener(marker, 'click', function () {
                         // 모달 창에 정보 업데이트
-                        $('#apartmentModalLabel').text(apartment.apartmentName);
+                        $('#apartmentLabel').text(apartment.apartmentName);
 						var detailsHtml = `
 						    <tr><th>년도</th><td>${apartment.year}</td></tr>
 						    <tr><th>거래 금액</th><td>${apartment.dealAmount}</td></tr>
@@ -41,7 +41,9 @@ $(document).ready(function () {
 						    <tr><th>기준월</th><td>${apartment.referenceMonth}</td></tr>
 						    <tr><th>전용면적</th><td>${apartment.exclusiveArea}㎡</td></tr>
 						`;
+						var detailsHtml2 = `<tr><th>전용면적</th><td>${apartment.exclusiveArea}㎡</td></tr>`;
 						$('#apartment-details').html(detailsHtml);
+						$('#apartment-details2').html(detailsHtml2);
 
 
                         // 모달 창 띄우기
