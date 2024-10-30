@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -35,5 +36,12 @@ public class ApartmentController {
     @ResponseBody
     public List<ApartmentData> getAllApartmentsJson() {
         return apartmentService.findAll();
+    }
+    
+    // 특정 아파트의 가격 히스토리를 JSON으로 반환
+    @GetMapping("/{apartmentName}/price-history")
+    @ResponseBody
+    public List<ApartmentData> getPriceHistory(@PathVariable String apartmentName) {
+        return apartmentService.getPriceHistory(apartmentName);
     }
 }

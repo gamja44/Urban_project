@@ -19,6 +19,7 @@ java {
 
 compileJava {
     options.encoding = "UTF-8"
+   	options.compilerArgs << '-parameters'  // 파라미터 이름 정보를 활성화합니다.
 }
 
 compileTestJava {
