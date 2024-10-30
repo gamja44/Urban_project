@@ -38,4 +38,10 @@ public interface ApartmentDataMapper {
     // 중복 데이터 확인
     @Select("SELECT COUNT(*) FROM apartment_data WHERE year = #{year} AND deal_amount = #{dealAmount} AND legal_dong_name = #{legalDongName} AND lot_number = #{lotNumber} AND apartment_name = #{apartmentName} AND floor = #{floor}")
     int countExistingData(ApartmentData apartmentData);
+    
+    @Select("SELECT * FROM apartment_data WHERE apartment_name = #{apartmentName} ORDER BY referenceDay ASC")
+    List<ApartmentData> findPriceHistoryByApartmentName(String apartmentName);
+
 }
+
+
