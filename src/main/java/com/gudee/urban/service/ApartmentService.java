@@ -124,5 +124,10 @@ public class ApartmentService {
                 dto.getLegalDongName() != null && !dto.getLegalDongName().isEmpty() &&
                 dto.getApartmentName() != null && !dto.getApartmentName().isEmpty();
     }
+    // 특정 아파트의 가격 히스토리 조회
+    public List<ApartmentData> getPriceHistory(String apartmentName) {
+        return apartmentDataMapper.findPriceHistoryByApartmentName(apartmentName);
+    }
+
 }
 
