@@ -25,7 +25,7 @@ public interface ApartmentDataMapper {
 	List<ApartmentData> findFiltered(@Param("params") Map<String, Object> params);
 
 
-	@Select("SELECT id, year, deal_amount AS dealAmount, legal_dong_name AS legalDongName, floor, lot_number AS lotNumber, apartment_name AS apartmentName, build_year AS buildYear, reference_day AS referenceDay, reference_month AS referenceMonth, exclusive_area AS exclusiveArea, x_coordinate AS xCoordinate, y_coordinate AS yCoordinate FROM apartment_data limit 100")
+	@Select("SELECT id, year, deal_amount AS dealAmount, legal_dong_name AS legalDongName, floor, lot_number AS lotNumber, apartment_name AS apartmentName, build_year AS buildYear, reference_day AS referenceDay, reference_month AS referenceMonth, exclusive_area AS exclusiveArea, x_coordinate AS xCoordinate, y_coordinate AS yCoordinate FROM apartment_data limit 1000")
 	List<ApartmentData> findAll();
 
 

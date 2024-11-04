@@ -86,8 +86,7 @@ $(document).ready(function () {
 									  'rgba(0, 0, 100, 0.2)',
 									  'rgba(0, 0, 150, 0.3)',
 									  'rgba(0, 0, 200, 0.4)',
-									  'rgba(0, 0, 250, 0.5)'],
-                    borderColor: 'rgba(75, 192, 192, 1)',
+									  'rgba(0, 0, 250, 0.5)'],                  
                     borderWidth: 1
                 }]
             },
