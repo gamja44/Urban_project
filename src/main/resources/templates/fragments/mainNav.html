@@ -7,13 +7,17 @@
 		</a>
 		
 		<form class="d-none d-sm-inline-block">
-				<div class="input-group input-group-navbar">
-					<input type="text" class="form-control" placeholder="Search…" aria-label="Search">
-					<button class="btn" type="button">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search align-middle"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-					</button>
-				</div>
-		</form>		
+	    <div class="input-group input-group-navbar">
+	        <input type="text" class="form-control" id="search-input" placeholder="Search…" aria-label="Search">
+	        <button class="btn" id="search-button" type="button">
+	            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search align-middle">
+	                <circle cx="11" cy="11" r="8"></circle>
+	                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+	            </svg>
+	        </button>
+	    </div>
+		</form>
+	
 		
 		<div class="navbar-collapse collapse">
 			<ul class="navbar-nav navbar-align">
@@ -81,7 +85,7 @@
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-icon dropdown-toggle" href="#" id="messagesDropdown" data-bs-toggle="dropdown">
-						<div class="position-relative">
+						<div id="chatOpenBtn" class="position-relative">
 							<i class="align-middle" data-feather="message-square"></i>
 						</div>
 					</a>

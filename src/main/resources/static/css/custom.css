@@ -1,0 +1,49 @@
+.main {
+    display: flex;
+    height: 100vh; /* 전체 화면 높이 */
+}
+
+#map-container {
+    flex: 2; /* 지도 컨테이너가 전체의 2/3 차지 */
+    height: 100%; /* 부모의 높이를 모두 사용 */
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.apartment-info-container {
+    flex: 1; /* 아파트 정보 컨테이너가 전체의 1/3 차지 */
+    height: 100%;
+    overflow-y: auto;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.apartment-info-container h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.apartment-info-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.apartment-info-container th,
+.apartment-info-container td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.apartment-info-container th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+
+
